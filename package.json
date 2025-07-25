@@ -5,10 +5,11 @@
   "scripts": {
     "start": "node index.js",
     "dev": "json-server --watch db.json --port 3000",
-    "build": "echo 'No build step required for json-server'"
+    "build": "npm install",
+    "postinstall": "echo 'Dependencies installed successfully'"
   },
   "dependencies": {
-    "json-server": "^1.0.0-beta.3"
+    "json-server": "^0.17.4"
   },
   "engines": {
     "node": ">=18.0.0"
